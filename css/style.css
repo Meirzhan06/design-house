@@ -86,10 +86,10 @@ h1{
     text-shadow: #ff0015 0px 0px 5px;
 }
 .sec2{
-    display: none;
     align-items: center;
     letter-spacing: 2.6px;
 }
+
 .sec2 ul{
     display: flex;
     list-style: none;
@@ -407,8 +407,9 @@ h1{
 
 
 .section4{
-    height: 120vh;
+    height: auto;
     width: 100%;
+    padding-bottom: 80px;
 }
 .section4-caption{
     text-align: center;
@@ -483,9 +484,10 @@ h1{
 }
 .arts{
     width: 100%;
-    height: 20vh;
+    height: auto;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .nav2{
@@ -511,6 +513,7 @@ h1{
 .subscribe{
     height: 25vh;
     width: 90%;
+    padding: 0 30px;
     background-color: #99823D;
     position: absolute;
     bottom: 35%;
@@ -532,6 +535,7 @@ h1{
 }
 .subscribe button{
     height: 68px;
+    padding: 5px 10px;
     width: 155px;
     background-color: #141414;
     margin-left: 15px;
@@ -701,10 +705,32 @@ h1{
     .stats h1{
         font-size: 49px;
     }
+    .arts img{
+        height: 30px;
+        width: 120px;
+        margin-top: 15px;
+    }
+    .dots img{
+        height: 9px;
+        width: 9px;
+    }
 }
 @media (max-width: 968px) {
-    .arts{
+    .nav2{
         flex-direction: column;
+        padding: 40px;
+        height: auto;
+    }
+    .nav2 .sec2{
+        margin-top: 15px;
+        width: 100%;
+    }
+    .nav2 .sec2 ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo2{
+        width: 100%;
     }
 }
 @media (max-width: 768px) {
@@ -779,5 +805,34 @@ h1{
     }
     .section2 .container{
         padding-bottom: 130px;
+    }
+    .section4-caption h1{
+        font-size: 40px;
+    }
+    .service{
+        flex-basis: 100%;
+    }
+    .arts{
+        justify-content: center;
+    }
+    .art-img{
+        flex-basis: 33%;
+        display: flex;
+        justify-content: center;
+    }
+    .subscribe input::placeholder{
+        font-size: 12px;
+    }
+}
+@media (max-width:540px) {
+    .subscribe button{
+        width: 30%;
+        height: 50px;
+        font-size: 10px;
+    }
+    .subscribe input{
+        height: 50px;
+        width: 70%;
+        font-size: 2em;
     }
 }
