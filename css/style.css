@@ -45,6 +45,13 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 1s all;
+    opacity: 0;
+    transform: translateY(-10vh);
+}
+.logo.animation{
+    opacity: 1;
+    transform: translatey(0vh);
 }
 .hidden-logo{
     width: 326px;
@@ -132,6 +139,13 @@ h1{
     right: -25%;
     z-index: 1;
     padding: 37px 67px 0 68px;
+    transition: 1s all;
+    opacity: 0;
+    transform: translatex(10vh);
+}
+.content-square.animation{
+    opacity: 1;
+    transform: translateX(0vh);
 }
 .comment{
     letter-spacing: normal;
@@ -160,9 +174,16 @@ h1{
     color: #fff;
     letter-spacing: 3px;
     cursor: pointer;
+    transition: all 0.2s;
 }
 .square-buttons button:last-child{
     background-color: #000;
+}
+.square-buttons button:last-child:hover{
+    background-color: rgb(27, 27, 27);
+}
+.square-buttons button:first-child:hover{
+    background-color: #aa9248;
 }
 
 .content-square h1{
@@ -210,6 +231,13 @@ h1{
     width: 90%;
     height: auto;
     display: flex;
+    transition: 1s all;
+    opacity: 0;
+    transform: translateY(10vh);
+}
+.section2-1.animation{
+    opacity: 1;
+    transform: translateY(0vh);
 }
 .section2-2-1{
     width: 60%;
@@ -270,6 +298,51 @@ h1{
     flex-direction: column;
     align-items: center;
 }
+.a{
+    transition: 1s all;
+    opacity: 0;
+    transform: scale(0);
+}
+.a.animation{
+    opacity: 1;
+    transform: scale(1);
+}
+.b{
+    transition: 0.9s all;
+    opacity: 0;
+    transform: scale(0);
+}
+.b.animation{
+    opacity: 1;
+    transform: scale(1);
+}
+.c{
+    transition: 0.5s all;
+    opacity: 0;
+    transform: scale(0);
+}
+.c.animation{
+    opacity: 1;
+    transform: scale(1);
+}
+.d{
+    transition: 0.9s all;
+    opacity: 0;
+    transform: scale(0);
+}
+.d.animation{
+    opacity: 1;
+    transform: scale(1);
+}
+.e{
+    transition: 1.2s all;
+    opacity: 0;
+    transform: scale(0);
+}
+.e.animation{
+    opacity: 1;
+    transform: scale(1);
+}
 .stats h1{
     font-size: 59px;
     font-weight: 700;
@@ -285,7 +358,14 @@ h1{
     width: 100%;
     display: flex;
     justify-content: center;
-
+    transition: all 1s;
+    opacity: 0;
+    transform: translateY(10vh);
+    margin-top: -80px;
+}
+.section3.animation{
+    opacity: 1;
+    transform: translateY(0vh);
 }
 .slider-item{
     position: relative;
@@ -411,6 +491,13 @@ h1{
     width: 100%;
     padding-bottom: 80px;
     margin-top: 50px;
+    transition: 1s all;
+    opacity: 0;
+    transform: translateY(10vh);
+}
+.section4.animation{
+    opacity: 1;
+    transform: translateY(0vh);
 }
 .section4-caption{
     text-align: center;
@@ -471,6 +558,10 @@ h1{
     background-color: #99823D;
     color: #fff;
     letter-spacing: 3px;
+    transition: 0.2s all;
+}
+.section4-button button:hover{
+    background-color: #aa9248;
 }
 
 .section5{
@@ -485,11 +576,56 @@ h1{
 }
 .arts{
     width: 100%;
-    height: auto;
+    height: 20vh;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.f{
+    transition: 1s all;
+    opacity: 0;
+    transform: scale(0);
+}
+.f.animation{
+    opacity: 1;
+    transform: scale(1);
+}
+.g{
+    transition: 0.9s all;
+    opacity: 0;
+    transform: scale(0);
+}
+.g.animation{
+    opacity: 1;
+    transform: scale(1);
+}
+.h{
+    transition: 0.5s all;
+    opacity: 0;
+    transform: scale(0);
+}
+.h.animation{
+    opacity: 1;
+    transform: scale(1);
+}
+.i{
+    transition: 0.9s all;
+    opacity: 0;
+    transform: scale(0);
+}
+.i.animation{
+    opacity: 1;
+    transform: scale(1);
+}
+.j{
+    transition: 1.2s all;
+    opacity: 0;
+    transform: scale(0);
+}
+.j.animation{
+    opacity: 1;
+    transform: scale(1);
 }
 .nav2{
     width: 100%;
@@ -499,7 +635,15 @@ h1{
     align-items: center;
     justify-content: space-between;
     padding: 0 70px;
+    transition: 1s all;
+    opacity: 0;
+    transform: translateY(10vh);
 }
+.nav2.animation{
+   opacity: 1;
+   transform: translateY(0vh);
+}
+
 .footer{
     height: 30vh;
     width: 100%;
@@ -521,7 +665,15 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 1s all;
+    opacity: 0;
+    transform: translateY(10vh);
 }
+.subscribe.animation{
+    opacity: 1;
+    transform: translateY(0vh);
+ }
+
 .subscribe input{
     width: 860px;
     height: 68px;
@@ -726,6 +878,7 @@ h1{
     }
     .footer-text{
         font-size: 12px;
+        padding: 0 5px;
     }
     .footer-text a{
         font-size: 12px;
@@ -830,6 +983,10 @@ h1{
         display: flex;
         justify-content: center;
         margin: 0 10px;
+    }
+    .subscribe input{
+        font-size: 14px;
+        padding-left: 10px;
     }
     .subscribe input::placeholder{
         font-size: 12px;
